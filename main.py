@@ -12,7 +12,7 @@ ball_size = 20
 paddle_speed = 7
 ball_speed_x = 5
 ball_speed_y = 5
-highscore_file = "highscore.txt"
+highscore_file = os.path.join(os.path.dirname(__file__), "highscore.txt")
 
 class Paddle:
     def __init__(self, x, y):
